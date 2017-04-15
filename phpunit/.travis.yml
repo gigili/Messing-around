@@ -4,7 +4,7 @@ php:
 before_instal:
  - php /usr/bin/composer self-update
 before_script:
- - phpunit/composer install
+ - composer install
 script: phpunit --configuration phpunit/phpunit.xml --coverage-text
 notifications:
   email: false
