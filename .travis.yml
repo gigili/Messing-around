@@ -6,4 +6,5 @@ before_instal:
 before_script:
  - composer install
 script: phpunit -- configuration phpunit.xml --coverage-text
-
+notifications:
+  email: false
